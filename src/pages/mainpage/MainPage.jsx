@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import mainStyle from './mainPage.module.css'
 
 function MainPage({user}) {
 
@@ -9,7 +10,7 @@ function MainPage({user}) {
   }, [user])
   return (
     <>
-    <h1>Добро пажаловать {state.name} {state.sureName} мы вас очень ждали!</h1>
+    <h1 className={mainStyle.title}>Добро пажаловать {state.name} {state.sureName} мы вас очень ждали!</h1>
     </>
   )
 }
